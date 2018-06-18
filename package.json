@@ -12,7 +12,8 @@
     "postinstall": "cp node_modules/popper.js/dist/popper.min.* public/js/lib && cp node_modules/bootstrap/dist/js/bootstrap.min.* public/js/lib && cp node_modules/jquery/dist/jquery.min.* public/js/lib && npm rebuild node-sass",
     "start": "nodemon app.js",
     "test": "nyc mocha --timeout=3000 --exit",
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "dev": "npm run postinstall && npm run start"
   },
   "dependencies": {
     "@ladjs/bootstrap-social": "^7.0.2",
