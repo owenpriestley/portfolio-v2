@@ -17,6 +17,10 @@ html {
   min-height: 100%;
 }
 
+h2, h3 {
+  -webkit-margin-after: 0.83em;
+}
+
 body {
   padding-top: 80px;
   margin-bottom: 75px;
@@ -37,6 +41,33 @@ footer {
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1200px) {
+.container {
+    max-width: 1500px;
+    padding-left: 50px;
+    padding-right: 50px 
+}
+}
+
+.img-container-top {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.img-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: .825em; 
+  margin-top: 1%;
+}
+
+.spacer {
+  margin-top: 90px;
+}
+
 
 // Input Fields
 // -------------------------
@@ -122,5 +153,16 @@ textarea {
 // -------------------------
 
 .lede {
-  text-align: right;
+  margin-top: 90px;
+  margin-bottom: 10%;
+}
+
+.img-sub {
+
+  text-align: left;
+}
+
+.img-full {
+  text-align: center !important;
+  padding-top: 1%
 }
