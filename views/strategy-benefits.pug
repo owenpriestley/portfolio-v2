@@ -1,0 +1,129 @@
+extends layout
+
+block content
+  .row
+    .col-md-5
+    .col-md-7.lede
+      h1 Last year, 43 million people came to Citizens Advice online to solve their personal problems.
+      br
+      h1 Over 1 million of those people needed help with benefits.
+
+  .row.spacer
+    .col-md-7
+      h2 The problem
+      p Benefits is the most popular area for Citizens Advice to help people - both online and face-to-face.
+      p Over the years, hundreds of long, complex pages were developed to serve 2 audiences - the public user, and advisers in local Citizens Advice offices.
+      p We needed to work out what people actually need help with, and how to solve those problems as quickly as possible.
+    .col-md-5
+
+  .row.spacer
+    .col-md-5
+        .img-container-top
+          .img-container
+            img(src="/images/InWorkBenefits.png" style="width: 100%" alt="Auditing hundreds of pages")
+            p One of our pages was longer than the classic novella Heart of Darkness
+
+    .col-md-7
+      h2 What I did
+      p I lead the team tasked with designing user centred, actionable benefits advice to help people with Income Support, Jobseeker's Allowance and Tax credits problems.
+      p The team distilled a vast, complex area into a small number of logical journeys. We then designed concise, user-focused content to meet users' needs.
+      p In practice, this meant we had to:
+        ul
+          li audit hundreds of pages of existing content
+          li define existing and emerging user needs
+          li design new content based on evidence and testing
+
+  .row.spacer
+    .col-md-7
+      h2 Audit the content, understand the subject
+      p To redesign an extensive, high-traffic area of advice content, we first needed to understand exactly what it covered.
+      p It wasn't feasible to read through hundreds of pages of advice content, so I developed a post-it note system to summarise lengthy journeys.
+      p Using this technique, we skimmed through long sections as a group and quickly summarised the key problems each page covered.
+
+  .row.spacer
+    .container
+          .row
+            .col-md-12
+              #carousel-example-generic.carousel.slide(data-ride='carousel')
+                // Indicators
+                ol.carousel-indicators
+                  li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='1')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='2')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='3')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='4')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='5')
+                  |                             
+                  li(data-target='#carousel-example-generic', data-slide-to='6')
+                // Wrapper for slides
+                .carousel-inner(role='listbox')
+                  .item.active
+                    img(src='images/carousel/post-it-audit0.png', alt='')
+                    |                                 
+                    .carousel-caption                  |                             
+                  .item
+                    img(src='images/carousel/post-it-audit1.png', alt='')
+                  |                             
+                  .item
+                    img(src='images/carousel/post-it-audit2.png', alt='')
+                  |                             
+                  .item
+                    img(src='images/carousel/post-it-audit3.png', alt='')
+                  .item
+                    img(src='images/carousel/post-it-audit4.png', alt='')
+                  .item
+                    img(src='images/carousel/post-it-audit5.png', alt='')
+                  .item
+                    img(src='images/carousel/post-it-audit6.png', alt='')
+                // Controls
+                a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                  |                             
+                  span.sr-only Previous
+                |                         
+                a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                  |                             
+                  span.sr-only Next
+
+  .row.spacer
+    .col-md-5
+      .img-container-top
+        .img-container
+          img(src="/images/FormFinder.png" width="100%" alt="Our MVP addresses a key pain point - finding the right form.")
+          .img-sub Our MVP addresses a key pain point - finding the right form.
+    .col-md-7
+      h2 Design the MVP
+      p The existing Citizens Advice content on priority services ranked highly on Google - but it was unclear, jargon-filled and and outdated. As a quick-win, I redesigned the content on the site to:
+      ul
+        li make the journey clearer
+        li distil eligibility criteria into actionable bullets
+        li include a simple form-finder that points users to the right form
+      p I tracked clickthrough rates on the form finder for each network, and targeted some users with an intercept survey to gather potential research participants.
+
+  .row.spacer
+      .img-container-top 
+        .img-container
+          img(src="/images/MockupStartPage.png")
+          p.img-full An early start page mockup - the Citizens Advice brand and tone of voice make priority services less daunting.
+  
+  .row.spacer
+    .col-md-7
+      h2 Wireframe complex parts of the journey
+      p I worked with a UX designer to build and test a more complex interactive prototype.
+      p This testing exposed more complexities, particularly for 'proxy users' - those filling in the form on someone else's behalf.
+      p The language and tone of voice needed to change significantly depending who's filling in the form. I created a detailed journey map to define a consistent tone-of-voice for each journey.
+    .col-md-5
+  
+  .row.spacer
+    .img-container-top 
+      .img-container
+        img(src="/images/ContactJourneyMockup.png" width="100%")
+        p.img-full Questions and language depends on who's signing up, and their circumstances.
+
+

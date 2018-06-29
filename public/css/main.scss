@@ -166,3 +166,25 @@ textarea {
   text-align: center !important;
   padding-top: 1%
 }
+
+// Carousel config
+// --------------------------
+
+.carousel-control {
+  background-image: none !important;
+}
+
+.carousel-inner > .item {
+  height: 576px;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+  position: absolute;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  border: 1px solid black !important;
+  background-color: transparent;
+}

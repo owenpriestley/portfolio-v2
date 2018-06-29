@@ -35,7 +35,7 @@ const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
 const uxController = require('./controllers/ux-journey');
-
+const strategyController = require('./controllers/strategy-benefits');
 
 /**
  * API keys and Passport configuration.
@@ -122,6 +122,7 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  */
 app.get('/', projectsController.index);
 app.get('/ux-writing', uxController.index);
+app.get('/strategy-benefits', strategyController.index);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
