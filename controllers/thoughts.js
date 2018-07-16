@@ -3,7 +3,7 @@
  * Home page.
  */
 exports.index = (req, res) => {
-  res.render('projects', {
-    title: 'Projects'
+  res.render('thoughts', {
+    title: 'Thoughts'
   });
 };

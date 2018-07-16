@@ -6,24 +6,15 @@ block content
     .col-md-7.lede
       h1 Last year, 43 million people came to Citizens Advice online to solve their personal problems.
       br
-      h1 Over 1 million of those people needed help with benefits.
 
   .row.spacer
-    .col-md-7
+    .col-md-7.align-top
       h2 The problem
-      p Benefits is the most popular area for Citizens Advice to help people - both online and face-to-face.
-      p Over the years, hundreds of long, complex pages were developed to serve 2 audiences - the public user, and advisers in local Citizens Advice offices.
-      p We needed to work out what people actually need help with, and how to solve those problems as quickly as possible.
-    .col-md-5
-
-  .row.spacer
-    .col-md-5
-        .img-container-top
-          .img-container
-            img(src="/images/InWorkBenefits.png" style="width: 100%" alt="Auditing hundreds of pages")
-            p One of our pages was longer than the classic novella Heart of Darkness
-
-    .col-md-7
+      p Citizens Advice help millions of people with benefits problems every year.
+      p With more and more people looking for advice online, my team was tasked with replacing hundreds of long, complex and outdated pages.
+      p To do this, we needed to gain a deep understanding of our audience and write concise, actionable advice to solve their problems as quickly as possible.
+      br
+      br
       h2 What I did
       p I lead the team tasked with designing user centred, actionable benefits advice to help people with Income Support, Jobseeker's Allowance and Tax credits problems.
       p The team distilled a vast, complex area into a small number of logical journeys. We then designed concise, user-focused content to meet users' needs.
@@ -31,55 +22,61 @@ block content
         ul
           li audit hundreds of pages of existing content
           li define existing and emerging user needs
-          li design new content based on evidence and testing
+          li design new content based on evidence and testing  
+    .col-md-4(style="margin-left: 6%;")
+          div(style="width: 50%; float: left; font-weight: 700; text-align: center") Before
+          div(style="width: 50%; float: right; font-weight: 700;  text-align: center") After
+          .img-container-top
+            .img-container.align-top
+              img(src="/images/JSA-before.png" style="max-width: 50%" alt="JSA content before redesign")
+              img(class="align-top" src="/images/JSA-after.png" style="max-width: 50%" alt="JSA content after redesign")
+              p The Jobseeker's Allowance content - before and after. We broke one epic page into a clear, focused journey.
+
+
+  .row.spacer.align-middle
+    .col-md-7
+      h2 Designing content with empathy
+      p Previous research showed that - on the whole - visitors to the Citizens Advice website have a lower than average digital literacy. In addition to this, many visitors use our content under great emotional stress.
+      p With this in hand, we set out to observe as many in-person advice sessions as possible in and outside London. I used this time to observe the vocabulary our users employed when talking about their benefits problems, and discuss different solutions with experienced advisers. 
+      p These insights proved invaluable when it came to writing content that empathised with our users.
+    .col-md-5
+      .img-container-top
+        .img-container
+          img(src="/images/hackney-cab.png" alt="The Citizens Advice Bureau in Hackney" style="max-width: 99%")
+          p The team visited local offices to observe advice sessions across the country.
 
   .row.spacer
     .col-md-7
       h2 Audit the content, understand the subject
-      p To redesign an extensive, high-traffic area of advice content, we first needed to understand exactly what it covered.
-      p It wasn't feasible to read through hundreds of pages of advice content, so I developed a post-it note system to summarise lengthy journeys.
-      p Using this technique, we skimmed through long sections as a group and quickly summarised the key problems each page covered.
+      p To redesign an extensive, high-traffic area of advice content, we needed to understand exactly what it already covered.
+      p It wasn't feasible to read through hundreds of pages of advice content, so I developed a system to summarise lengthy user journeys.
+      p Using this technique, we skimmed through long sections as a group, quickly noting down the key advice offered on each page.
 
   .row.spacer
     .container
           .row
             .col-md-12
               #carousel-example-generic.carousel.slide(data-ride='carousel')
-                // Indicators
-                ol.carousel-indicators
-                  li.active(data-target='#carousel-example-generic', data-slide-to='0')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='1')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='2')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='3')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='4')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='5')
-                  |                             
-                  li(data-target='#carousel-example-generic', data-slide-to='6')
                 // Wrapper for slides
                 .carousel-inner(role='listbox')
                   .item.active
-                    img(src='images/carousel/post-it-audit0.png', alt='')
+                    img(src='images/carousel/post-it-audit0.png', alt='' class="img-responsive center-block")
                     |                                 
                     .carousel-caption                                               
                   .item
-                    img(src='images/carousel/post-it-audit1.png', alt='')
+                    img(src='images/carousel/post-it-audit1.png', alt='' class="img-responsive center-block")
                   |                             
                   .item
-                    img(src='images/carousel/post-it-audit2.png', alt='')
+                    img(src='images/carousel/post-it-audit2.png', alt='' class="img-responsive center-block")
                   |                             
                   .item
-                    img(src='images/carousel/post-it-audit3.png', alt='')
+                    img(src='images/carousel/post-it-audit3.png', alt='' class="img-responsive center-block")
                   .item
-                    img(src='images/carousel/post-it-audit4.png', alt='')
+                    img(src='images/carousel/post-it-audit4.png', alt='' class="img-responsive center-block")
                   .item
-                    img(src='images/carousel/post-it-audit5.png', alt='')
+                    img(src='images/carousel/post-it-audit5.png', alt='' class="img-responsive center-block")
                   .item
-                    img(src='images/carousel/post-it-audit6.png', alt='')
+                    img(src='images/carousel/post-it-audit6.png', alt='' class="img-responsive center-block")
                 // Controls
                 a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
                   span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
@@ -92,17 +89,17 @@ block content
                   span.sr-only Next
 
   .row.spacer
-    .col-md-5
     .col-md-7
       h2 Define and validate user needs
       p With our knowledge of the existing content in hand - and data on the most common problems - we worked with subject matter experts to develop a set of user needs and acceptance criteria.
       p To delve deeper into the problem, we got out of the office and observed face-to-face sessions in Citizens Advice Bureaux across the country.
       p This helped us empathise with our users and validated many of our assumptions.
+    .col-md-5
 
   .row.spacer
       .img-container-top 
         .img-container
-          img(src="/images/BenefitsContentPlan.png" style="width: 100%")
+          img(src="/images/BenefitsContentPlan.png" style="max-width: 90%; -webkit-box-shadow: 0px 4px 18px 6px #ccc")
           p.img-full Recording user needs in a central place gives the whole team the opportunity to add their individual findings from research.
   
   .row.spacer
@@ -115,4 +112,4 @@ block content
     .col-md-5
       .img-container-top
         .img-container
-          img(src="/images/CheckIfJSA.png" style="width: 100%")
+          img(src="/images/CheckIfJSA.png" style="max-width: 100%;")

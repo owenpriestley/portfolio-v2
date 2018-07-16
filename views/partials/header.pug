@@ -1,16 +1,15 @@
 .navbar.navbar-light.fixed-top.navbar-expand-md
   .container
     a.navbar-brand(href='/')
-      i.fas.fa-cube
       | Owen Priestley
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='.navbar-collapse')
       span.sr-only Toggle navigation
       span.navbar-toggler-icon
     .collapse.navbar-collapse
       ul.nav.navbar-nav
-        li.active.nav-item(class=(title === 'Home') ? 'active' : undefined)
+        li.active.nav-item(class=(title === 'Projects') ? 'active' : undefined)
           a.nav-link(href='/') Projects
-        li.nav-item(class=(title === 'API Examples') ? 'active' : undefined)
-          a.nav-link(href='/api') Thoughts
-        li.nav-item(class=(title === 'Contact') ? 'active' : undefined)
+        li.nav-item(class=(title === 'Thoughts') ? 'active' : undefined)
+          a.nav-link(href='/thoughts') Thoughts
+        li.nav-item(class=(title === 'About') ? 'active' : undefined)
           a.nav-link(href='/contact') About

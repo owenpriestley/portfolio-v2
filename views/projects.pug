@@ -1,13 +1,62 @@
 extends layout
 
 block content
-  .row
-    .col-md-6
-      .card(style="width: 22rem")
-        img.card-img-top(src="images/ux-writing-thumbnail.png")
-        .card-body
-          a.card-text UX Writing — Designing a journey for vulnerable users
-    .card(style="width: 22rem")
-        img.card-img-top(src="images/ux-writing-thumbnail.png")
-        .card-body
-          a.card-text UX Writing — Designing a journey for vulnerable users
+  .row(style="width: 100%")
+  .col-md-12
+    #projects-carousel.carousel.slide(data-ride='carousel' data-interval="false")
+      // Controls
+      div(style="margin: auto; padding-bottom: 5%")
+        a.left.projects-control(href='#projects-carousel', role='button', data-slide='prev', style="float: left") &#8592; previous
+        a.right.projects-control(href='#projects-carousel', role='button', data-slide='next', style="float: right; text-align: right;") next &#8594;
+      br
+
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          .col-md-4.valign
+            .card
+              .card-body
+                a.project-title(href="/strategy-benefits") Making advice accessible
+              .card-brief
+                p Citizens Advice help millions of people with benefits problems every year.
+                p With more and more people looking for advice online, my team was tasked with replacing hundreds of long, complex and outdated pages.
+                p This case study shows how we designed straightforward, actionable and user-centered content for a huge, diverse audience.
+                a.case-study(href="/strategy-benefits") Read case study →
+          .col-md-8
+            img(src="/images/ContentPlanThumbnail.png" style="max-height: 130%; max-width: 90%")
+
+        .item
+          .col-md-4.valign
+            .card
+              .card-body
+                a.project-title(href="/ux-journey") Developing a beta from scratch
+              .card-brief
+                p Redgate Software create robust tools for developing, deploying and version controlling databases.
+                p I was part of a lean product team tasked with designing a tool for a totally new audience.
+                p This case study explores the fast paced process of wireframing, testing and building a beta product.
+                a.case-study(href="/ux-journey") Read case study →
+          .col-md-8.valign
+            img(src="/images/SSDTMockup2.png" style="border: 1px solid #777; max-height: 100%; max-width: 90%; margin: auto;")                                   
+        .item
+          .col-md-4.valign
+            .card
+              .card-body
+                a.project-title(href="/ux-writing") Designing a service for vulnerable users
+              .card-brief
+                p 9 million people in the UK are missing out on free services from their energy supplier because they aren't signed up.
+                p A big reason is because the signup process isn't user-friendly. It's complex, and buried several levels deep on corporate websites.
+                p This case study describes my role in designing and building a unified, user-centered signup process.
+                a.case-study(href="/ux-writing") Read case study →
+          .col-md-8
+            img(src="/images/ux-priority-thumbnail.png" style="max-width: 90%; max-height: 100%")                                   
+        .item
+          .col-md-4.valign
+            .card
+              .card-body
+                a.project-title(href="/swatchify") Swatchify
+              .card-brief
+                p In my spare time, I wanted to learn how to build web applications in Node.JS
+                p I love music and artwork, so I wanted to somehow involve that too.
+                p The result is Swatchify - a web app that takes a song, artist or album, and generates a colour scheme to match!
+          .col-md-8
+            img(src="/images/swatchify.png" style="max-width: 85%")

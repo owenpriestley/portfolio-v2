@@ -6,7 +6,9 @@
 @import "lib/font-awesome/fa-brands";
 @import "lib/font-awesome/fa-regular";
 @import "lib/font-awesome/fa-solid";
-
+/* for title */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
 @import "themes/default/default";
 
 // Scaffolding
@@ -17,9 +19,103 @@ html {
   min-height: 100%;
 }
 
+h1 {
+  font-family: 'Muli', Helvetica;
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: 700;}
+
 h2, h3 {
+  font-family: 'Muli', Helvetica;
+  font-size: 3rem;
+  font-weight: 500;
   -webkit-margin-after: 0.83em;
 }
+
+
+
+#projects-carousel > div.carousel-inner > div.item > div:nth-child(1) > div {
+  margin-left: 10%;
+  margin-top: 5%
+}
+
+#projects-carousel > div.carousel-inner > div.item > div:nth-child(2) > img {
+  margin-left: 10%;
+}
+
+.valign {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+a {
+  font-weight: 700;
+  color: #007bff;
+  transition: 0.3s;
+    transition-property: initial;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+
+.case-study {
+  text-align: right;
+  float: right;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+// Let's play cards
+// ------------------
+.card {
+  margin: 2px;
+  max-width: 325px;
+  border: none;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body p {
+  font-weight: 400;
+}
+
+.card-brief {
+  font-size: 1.4rem;
+  margin-top: 5%;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: black;
+  border-bottom: none;
+  letter-spacing: 2px;
+}
+
+.blog-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: black;
+  border-bottom: none;
+  letter-spacing: 1.5px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 
 body {
   margin-bottom: 75px;
@@ -27,6 +123,7 @@ body {
   line-height: 1.8em;
   letter-spacing: .02em;
   text-rendering: optimizeLegibility;
+  font-family: 'Muli', Helvetica;
 }
 
 footer {
@@ -41,15 +138,16 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
 .container {
     max-width: 1500px;
     padding-left: 50px;
     padding-right: 50px 
 }
 
-.carousel-inner > .item {
-  height: 576px;
+.carousel-inner .item {
+  height: 45rem;
+  margin: auto;
 }
 }
 
@@ -98,6 +196,7 @@ textarea {
   font-size: 18px;
   float: left;
   margin-left: 15px;
+  border-bottom: none;
 }
 
 .navbar-toggler {
@@ -116,6 +215,41 @@ textarea {
   left: initial;
   right: 0;
 }
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.focus {
+  color: black;
+ };
+
+ .navbar.navbar-light.fixed-top.navbar-expand-md
+{
+  box-shadow: none;
+}
+
+.navbar-brand {
+  letter-spacing: 0.08rem;
+}
+
+.navbar-light {
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  opacity: 0.9; }
+  .navbar-light .navbar-nav > li > a {
+    font-family: 'Muli', Helvetica;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    background-color: white;
+    letter-spacing: 0.08rem;}
+
+
 
 // Alerts
 // -------------------------
@@ -156,7 +290,7 @@ textarea {
 // -------------------------
 
 .lede {
-  margin-top: 90px;
+  margin-top: 100px;
   margin-bottom: 10%;
 }
 
@@ -177,17 +311,30 @@ textarea {
   background-image: none !important;
 }
 
-@media (max-width: 375px){
-  .carousel-inner > .item {
-    height: 200px;
-}}
+// Mobile only
+// ---------------------------
 
-.carousel-inner > .item > img {
-  margin: auto;
+@media (max-width: 375px){
+.card { 
+
+  margin-bottom: 10px;
+
 }
+
+ }
+
+//------^
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
   border: 1px solid black !important;
   background-color: transparent;
+}
+
+.projects-control {
+  text-shadow: none !important;
+  font-size: 1.5rem !important;
+  width: 50%;
+  text-decoration: none;
+
 }

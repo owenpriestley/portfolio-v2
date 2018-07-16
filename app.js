@@ -31,6 +31,8 @@ dotenv.load({ path: '.env.example' });
  * Controllers (route handlers).
  */
 const projectsController = require('./controllers/projects');
+const redgateController = require('./controllers/technical-writing');
+const thoughtsController = require('./controllers/thoughts');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
@@ -121,7 +123,9 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  * Primary app routes.
  */
 app.get('/', projectsController.index);
+app.get('/thoughts', thoughtsController.index);
 app.get('/ux-writing', uxController.index);
+app.get('/technical-writing', redgateController.index);
 app.get('/strategy-benefits', strategyController.index);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
