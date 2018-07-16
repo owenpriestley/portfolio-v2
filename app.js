@@ -124,7 +124,8 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  */
 app.get('/', projectsController.index);
 app.get('/thoughts', thoughtsController.index);
-app.get('/ux-writing', uxController.index);
+app.get('/ux-writing', uxController.writing);
+app.get('/ux-journey', uxController.journey);
 app.get('/technical-writing', redgateController.index);
 app.get('/strategy-benefits', strategyController.index);
 app.get('/login', userController.getLogin);
