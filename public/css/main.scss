@@ -222,10 +222,13 @@ textarea {
   margin-right: 15px;
   margin-bottom: 8px;
   margin-top: 8px;
+  border: none !important;
 }
 
-.navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon {
   font-size: 16px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABkCAMAAACCTv/3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA5ubmSUUG+gAAAAJ0Uk5T/wDltzBKAAAAPklEQVR42uzYQQ0AAAgDseHfNC4IyVoD912WAACUm3uampqampqamq+aAAD+IVtTU1NTU1NT0z8EAFBsBRgAX+kR+Qam138AAAAASUVORK5CYII=);
+  border: none !important;
 }
 
 .dropdown-menu {
