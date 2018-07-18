@@ -394,5 +394,8 @@ ol.carousel-indicators li.active {
   font-size: 1.7rem !important;
   width: 50%;
   text-decoration: none;
+  @media (max-width: 375px) {
+    font-size: 15px !important;
+  }
 
 }
