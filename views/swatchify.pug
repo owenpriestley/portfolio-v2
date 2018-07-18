@@ -1,0 +1,123 @@
+extends layout
+
+block content
+  .row
+    .col-md-5
+    .col-md-7.lede
+      h1 Last year, 43 million people came to Citizens Advice online to solve their personal problems.
+      br
+      h1 1 million of those people needed help with benefits.
+
+  .row
+    .col-md-6.align-top
+      h2 The problem
+      p Citizens Advice help millions of people with benefits problems every year.
+      p With more and more people looking for advice online, my team was tasked with replacing hundreds of long, complex and outdated pages.
+      p To do this, we needed to gain a deep understanding of our audience and write concise, actionable advice to solve their problems as quickly as possible.
+  .row.spacer
+    .col-md-4
+      h3 Before
+      img(src="/images/CheckJSABefore.png" style="max-width: 100%; border: 1px dashed red")
+      p.img-full(style="color: red") Dense, technical and overtly officious. 
+    .col-md-4
+      h3 After
+      img(src="/images/CheckJSAAfter.png" style="max-width: 100%; border: 1px dashed green")
+      p.img-full(style="color: green") Clearer, friendlier and more active.    
+
+  .row.spacer
+    .col-md-6  
+      h2 What I did
+      p I lead the team tasked with designing user centred, actionable benefits advice to help people with Income Support, Jobseeker's Allowance and Tax credits problems.
+      p The team distilled a vast, complex area into a small number of logical journeys. We then designed concise, user-focused content to meet users' needs.
+      p In practice, this meant we had to:
+        ul
+          li get to know our users and understand their problems
+          li audit hundreds of pages of existing content
+          li define existing and emerging user needs
+          li design new content based on evidence and testing    
+
+  .row.spacer.align-middle
+    .col-md-6
+      h2 Designing content with empathy
+      p Previous research showed that - on the whole - visitors to the Citizens Advice website have a lower than average digital literacy. In addition to this, many visitors use our content under great emotional stress.
+      p With this in hand, we set out to observe as many in-person advice sessions as possible in and outside London. 
+      p I used this time to observe the vocabulary our users employed when talking about their benefits problems, and discuss different solutions with experienced advisers. 
+      p These insights proved invaluable when it came to writing content that empathised with our users.
+    .col-md-5
+      .img-container-top
+        .img-container
+          img(src="/images/hackney-cab.png" alt="The Citizens Advice Bureau in Hackney" style="max-width: 99%")
+          p The team visited local offices to observe advice sessions across the country.
+
+  .row.spacer
+    .col-md-6
+      h2 Audit the existing content
+      p To redesign an extensive, high-traffic area of advice content, we needed to understand exactly what it already covered.
+      p It wasn't feasible to read through hundreds of pages of advice content, so I developed a system to summarise lengthy user journeys.
+      p Using this technique, we skimmed through long sections as a group, quickly noting down the key advice offered on each page.
+
+  .row.spacer
+    .container
+          .row
+            .col-md-12
+              #carousel-example-generic.carousel.slide(data-ride='carousel')
+                // Wrapper for slides
+                .carousel-inner(role='listbox')
+                  .item.active
+                    img(src='images/carousel/post-it-audit0.png', alt='' class="img-responsive center-block")
+                    |                                 
+                    .carousel-caption                                               
+                  .item
+                    img(src='images/carousel/post-it-audit1.png', alt='' class="img-responsive center-block")
+                  |                             
+                  .item
+                    img(src='images/carousel/post-it-audit2.png', alt='' class="img-responsive center-block")
+                  |                             
+                  .item
+                    img(src='images/carousel/post-it-audit3.png', alt='' class="img-responsive center-block")
+                  .item
+                    img(src='images/carousel/post-it-audit4.png', alt='' class="img-responsive center-block")
+                  .item
+                    img(src='images/carousel/post-it-audit5.png', alt='' class="img-responsive center-block")
+                  .item
+                    img(src='images/carousel/post-it-audit6.png', alt='' class="img-responsive center-block")
+                // Controls
+                a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                  |                             
+                  span.sr-only Previous
+                |                         
+                a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                  |                             
+                  span.sr-only Next
+
+  .row.spacer
+    .col-md-7
+      h2 Define and validate user needs
+      p With our knowledge of the existing content in hand - and data on the most common problems - we worked with subject matter experts to develop a set of user needs and acceptance criteria.
+      p To delve deeper into the problem, we got out of the office and observed face-to-face sessions in Citizens Advice Bureaux across the country.
+      p This helped us empathise with our users and validated many of our assumptions.
+    .col-md-5
+
+  .row.spacer
+      .img-container-top 
+        .img-container
+          img(src="/images/BenefitsContentPlan.png" style="max-width: 90%; -webkit-box-shadow: 0px 4px 18px 6px #ccc")
+          p.img-full Recording user needs in a central place gives the whole team the opportunity to add their individual findings from research.
+  
+  .row.spacer
+    .col-md-7
+      h2 Design new content
+      p To meet the user needs identified through discovery, I mapped out the most common user journeys and designed concise, actionable content to support them.
+      p I'd familiarised myself with our users' vocabulary during discovery, by observing face-to-face advice sessions and through online forum research.
+      p I worked with this vocabulary and the Citizens Advice tone-of-voice to design positive, authoritative and effective content.
+      p We tested the content with advisers in local bureaux and in a lab setting with the general public, and monitored feedback and metrics after publishing.
+    .col-md-4(style="margin-left: 6%;")
+      div(style="width: 50%; float: left; font-weight: 700; text-align: center") Before
+      div(style="width: 50%; float: right; font-weight: 700;  text-align: center") After
+      .img-container-top
+        .img-container.align-top
+          img(src="/images/JSA-before.png" style="max-width: 50%" alt="JSA content before redesign")
+          img(class="align-top" src="/images/JSA-after.png" style="max-width: 50%" alt="JSA content after redesign")
+          p The Jobseeker's Allowance content - before and after. We broke one epic page into a clear, focused journey.
