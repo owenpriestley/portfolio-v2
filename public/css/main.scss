@@ -19,27 +19,37 @@ html {
   min-height: 100%;
 }
 
+body {
+  margin-bottom: 75px;
+  font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: .02em;
+  text-rendering: optimizeLegibility;
+  font-family: 'Muli', Helvetica;
+}
+
 h1 {
-  font-size: 4rem;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 54px;
   letter-spacing: 2px;
   font-weight: 700;}
 
 h2 {
-  font-size: 3rem;
+  font-size: 27px;
+  line-height: 40.5px;
   font-weight: 500;
   -webkit-margin-after: 0.83em;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 18px;
   font-weight: 700;
   -webkit-margin-after: 0.83em;
 }
 
 p {
-  line-height: 2;
-  margin-bottom: 2rem
+  line-height: 27px;
+  margin-bottom: 18px;
 }
 
 #projects-carousel > div.carousel-inner > div.item > div:nth-child(1) > div {
@@ -104,13 +114,13 @@ a {
 }
 
 .card-brief {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 5%;
   margin-bottom: 0;
   font-weight: 400;
   color: #333;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2.4rem;
 }
 
 .project-title {
@@ -136,14 +146,6 @@ a:hover {
 }
 
 
-body {
-  margin-bottom: 75px;
-  font-size: 16px;
-  line-height: 1.8em;
-  letter-spacing: .02em;
-  text-rendering: optimizeLegibility;
-  font-family: 'Muli', Helvetica;
-}
 
 footer {
   position: absolute;
