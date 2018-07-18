@@ -22,9 +22,8 @@ exports.writing = (req, res) => {
     });
   };
 
-  exports.benefits = (req, res) => {
+  exports.swatchify = (req, res) => {
     res.render('swatchify', {
       title: 'Swatchify'
     });
   };
-

@@ -2,6 +2,7 @@
  * Module dependencies.
  */
 const express = require('express');
+var request = require("request");
 const compression = require('compression');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -153,6 +154,7 @@ app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userControl
  * API examples routes.
  */
 app.get('/api', apiController.getApi);
+app.get('/token', apiController.getSpotify);
 app.get('/api/lastfm', apiController.getLastfm);
 app.get('/api/nyt', apiController.getNewYorkTimes);
 app.get('/api/aviary', apiController.getAviary);
@@ -247,3 +249,4 @@ app.listen(app.get('port'), () => {
 });
 
 module.exports = app;
+
