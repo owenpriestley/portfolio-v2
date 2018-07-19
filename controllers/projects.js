@@ -27,3 +27,9 @@ exports.writing = (req, res) => {
       title: 'Swatchify'
     });
   };
+
+  exports.swatchifyAbout = (req, res) => {
+    res.render('swatchify-about', {
+      title: 'Swatchify'
+    });
+  };

@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  .row
+    .col-md-5
+    .col-md-7.lede
+      h1 Ever wanted to coordinate an outfit to match your favourite album?
+      br
+      h1 Perhaps paint your bathroom a Talking Heads colour scheme?
+
+  .row.spacer
+    .col-md-6
+      h2 What the heck is Swatchify?
+      p I wanted to learn how to build web applications in Node.JS - a popular javascript library. At the same time, I wanted do something involving music and art. 
+      p So I built a web app that takes a song, artist or album, and generates out a colour scheme to match. Let's face it - the possibilities are basically endless!
+      a.case-study(href="/projects/swatchify" style="float: left") Try it out →
+
+    .col-md-5
+      .img-container-top
+        .img-container
+          img(src="/images/swatchify.png" style="max-width: 100%" alt="Swatchify in action")
+          p Any song, any artist - anything on Spotify!
+
+  .row.spacer
+    .col-md-6
+      h2 How it works
+      p When you enter an artist, song or album title, Swatchify calls on #[a(href="https://developer.spotify.com/documentation/web-api/") the Spotify API] to grab album artwork for the first result.
+      p Behind the scenes, #[a(href="https://github.com/akfish/node-vibrant/") node-vibrant] parses the image and picks out the most prominent 6 colours. 
+      p Swatchify then renders the colours as a handy palette on the right-hand side of the page.
+
+    .col-md-5
+        .img-container-top
+          .img-container
+            img(src="/images/SpotifyNode.png" style="max-width: 100%" alt="Using Spotify's API via Node")
+            p Adopting Lean UX principles helped keep the focus on our users during alpha and beta stages.
+
+  .row.spacer
+    .col-md-6
+      h2 What's next
+      p As I build on my existing knowledge of JavaScript, HTML and CSS, I'd like to:
+      ul  
+        li improve the experience on mobile
+        li support more than just the first result on Spotify
+        li work in reverse - input colours, get music!
