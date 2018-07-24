@@ -126,7 +126,7 @@ app.get('/thoughts/', thoughtsController.index);
 app.get('/projects/', projectsController.index);
 app.get('/projects/developing-a-beta-from-scratch', projectsController.writing);
 app.get('/projects/a-service-for-vulnerable-users', projectsController.journey);
-app.get('/projects/making-advice-accessible', projectsController.benefits);
+app.get('/projects/content-with-empathy', projectsController.benefits);
 app.get('/projects/swatchify', projectsController.swatchify);
 app.get('/projects/swatchify-about', projectsController.swatchifyAbout);
 

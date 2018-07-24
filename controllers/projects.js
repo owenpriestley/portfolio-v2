@@ -17,8 +17,8 @@ exports.writing = (req, res) => {
   };
   
   exports.benefits = (req, res) => {
-    res.render('making-advice-accessible', {
-      title: 'Making advice accessible'
+    res.render('content-with-empathy', {
+      title: 'Designing content with empathy'
     });
   };
 
