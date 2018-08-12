@@ -8,51 +8,54 @@ block content
       br
       h1 Only 2 million are actually signed up.
 
-  .row
-    .col-md-6
-      h2 My role
-      p We needed to reach these eligible people and help them sign up for free support.
-      p I worked with a user researcher and a UX designer to build a universal, accessible and user centred service.
-      p In practice, this involved:
-      ul
-        li validating hypotheses about our users through data and research
-        li wireframing the journey for different users and scenarious
-        li writing UX copy with empathy and trust
-    .col-md-5
-      .img-container-top
-        .img-container
-          img(src="/images/user-needs-1.png" alt="Our starting user need")
 
   .row.spacer
+    .col-md-6
+      h2 The problem
+      p Through research, we knew that many eligible people have little confidence in using online services.
+      p Each energy supplier has their own onboarding process. These are often long, complex forms buried deep on corporate websites.
+      p Not everyone is eligible, and a large part of the journey is selecting very personal criteria that qualify you. 
     .col-md-5
         .img-container-top
           .img-container
             img(src="/images/SearchingPriorityServices.png" style="width: 100%" alt="Searching for Priority Services")
-    .col-md-6
-      h2 The problem
-      p Through research, we knew that many eligible users aren't confident using the internet, and find long forms difficult to fill in.
-      p Each energy supplier has their own form - these are often complex, long-winded and buried on corporate websites.
-      p We set out to design a straightforward, accessible onbording process - with language our users could understand.
+            p Even if users could find the right form, they found it difficult to fill in.
 
   .row.spacer
     .col-md-7
-      h2 Identifying user needs
-      p To understand our users and the problems they faced, we recorded assumptions about who might use this new service and pain points they might have.
-      p We attached hypotheses to make the impact on the solution clear, and defined validation signals to help guide future conversations with users.
-      p To turn them into user needs, we first needed to validate our hypotheses through research and testing.
-      p #[a(style="font-weight: normal" href="https://wearecitizensadvice.org.uk/9-million-people-are-missing-out-on-support-with-their-energy-supply-fb3744474b6e") Read more about how we turned hypotheses into user needs] on Medium.
-    .col-md-5
-      .img-container-top
-        .img-container
-          img(src="/images/LeanPostIts.png" alt="Recording assumptions, hypotheses and validation signals" width="100%")
-          .img-sub User researchers, UX designers and subject matter experts all bring their own assumptions to the table.
+      h2 What we did
+      p I worked with a user researcher and UX designer to design an accessible onboarding process rooted in user needs.
+      p Our main goals were to reduce the number of people filling in the form inaccurately, and get more people to the end of the journey.
+      p A large part of this was to build trust with our users through clear, concise and useful language.
 
   .row.spacer
-    .col-md-6
+    .col-md-5
+      h2 Starting with user needs
+      p We tested some existing journeys with users and found that selecting personal characteristics was a key pain point. 
+      p At this point in the journey they felt:
+      ul
+        li mistrust
+        li skepticism
+        li reluctance to continue
+      p We also found 40% of users were selecting options that didn't apply to them - or missing out on things that did - because they didn't understand the questions.
+      p I set out to use language that could support users through this difficult, intrusive journey.
+    .col-md-7
+      .img-container-top
+        .img-container
+          img(src="/images/old-psr-form.png" alt="Lots of questions on the old registration form")
+          p People felt little confidence or trust in the process. And they had lots of questions.
+
+  .row.spacer
+    .col-md-7
       h2 Speaking our users' language
-      p Existing sign up processes asked for lots of personal and often sensitive information.
-      p After speaking to users, we found they were overwhelmed by the long list of criteria and confused by the lack of context. The language was also impersonal and hard to relate to.
-      p Following a card sorting exercise, I worked with a UX designer to redesign the journey and rewrite the copy - using plain English and brand tone of voice.
+      p 
+      p Testing showed that users were overwhelmed by the long list of criteria and confused by the lack of context. 
+      p They didn't understand why we needed data we asked for, and the forms used impersonal language users found hard to relate to.
+      p To build a more relatable journey and build trust with users I:
+      ul
+        li arranged a card sort to group the long list into logical categories
+        li talked to users about their personal needs and how they would describe them
+        li worked with experts to provide context to some of the criteria
       p #[a(style="font-weight: normal" href="https://wearecitizensadvice.org.uk/9-million-people-are-missing-out-on-support-with-their-energy-supply-fb3744474b6e") Find out more more about how we tested microcopy with elderly users] on Medium.
 
   .row.spacer
@@ -61,28 +64,53 @@ block content
       h3 Before
       img(src="/images/PSRBefore.png" style="max-width: 100%; border: 2px dashed red")
       p.img-sub(style="max-width: 90%; color: red; font-size: 1.4rem; padding-top: 1%") There's no explanation why people need to give this information, and the language is dense and impersonal.
-  .row
+  .row(style="margin-top: 3%")
     .col-md-2
     .col-md-8
       h3 After
       img(src="/images/PSRAfter.png" style="max-width: 100%; border: 2px dashed green; margin: 0 auto;")
       p.img-sub(style="max-width: 90%; color: green; font-size: 1.4rem; padding-top: 1%")  We introduce the criteria logically and progressively. Where possible, I explained why we needed to ask the questions to reassure users and relate to their needs.
+  .row(style="margin-top: 3%")
+    .col-md-2
+    .col-md-8
+      h3 Impact
+      div(style="border: 2px dashed #f6be3f; width: 728px; padding: 10px; max-width: 100%")
+        p Testing our new approach showed that using more relatable language and logical groupings saw around:
+          ul 
+            li 30% more people reaching the end of the journey
+            li 20% fewer people selecting things that didn't apply to them
+        p The progressive disclosure of criteria slowed down the completion time, but increased the accuracy of results considerably.
 
   .row.spacer
     .col-md-7
-      h2 Wireframing complex parts of the journey
-      p Following #[a(style="font-weight: normal" href="https://design-system.service.gov.uk/patterns/question-pages/") GDS design principles] and 'the question protocol', I worked with a UX designer to build and test an interactive prototype.
-      p This testing showed that 'proxy users' - those filling in the form on someone else's behalf - found it difficult to identify with the language.
-      p How we addressed the user needed to change depending on who filled in the form, and who they were filling it in for.
+      h2 Testing out hypotheses
+      p But to build a complete service, we needed to record assumptions about all the people who might use it, and pain points they might have.
+      p We attached hypotheses to make the impact on the solution clear, and defined validation signals to help guide future conversations with users.
+      p But to turn them into user needs, we first needed to validate our hypotheses through research and testing.
+      p #[a(style="font-weight: normal" href="https://wearecitizensadvice.org.uk/9-million-people-are-missing-out-on-support-with-their-energy-supply-fb3744474b6e") Read more about how we tested hypotheses] on Medium.
+    .col-md-5
+      .img-container-top
+        .img-container
+          img(src="/images/LeanPostIts.png" alt="Recording assumptions, hypotheses and validation signals" width="100%")
+          .img-sub User researchers, UX designers and subject matter experts all bring their own assumptions to the table.
+
+  .row.spacer
+    .col-md-7
+      h2 Writing for the third person
+      p Following #[a(style="font-weight: normal" href="https://design-system.service.gov.uk/patterns/question-pages/") GDS design principles] and the question protocol, I worked with a UX designer to build and test an interactive prototype of the complete service.
+      p This showed that 'proxy users' - those filling in the form on someone else's behalf - found it difficult to identify with the language.
+      p How we addressed the user needed to change depending on who filled in the form, and who they were filling it in for. This was the first time I'd come across a use case for third-person language.
       p I created a  journey map to define the language for each user and their respective journey, while maintaining a consistent tone of voice.
     .col-md-5
-  
+
   .row.spacer
     .img-container-top
         .img-container
           img(src="/images/PSRWireframe.png" style="max-width: 100%")
           p.img-full I also used this journey to highlight possible pain points and questions for research and testing.
   
+
+
   .row.spacer
     .col-md-5
       .img-container-top
