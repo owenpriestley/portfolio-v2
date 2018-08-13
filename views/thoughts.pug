@@ -1,40 +1,86 @@
 extends layout
-
 block content
-  .row
-    .col-md-3
-      .card.thoughts
-        .card-body
-          img(src="images/thoughts/prototype-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
-          a.blog-title(href="https://medium.com/p/3b25a4e17fb0/") Thinking differently about prototypes
-        //  .card-brief
-          p As part of testing, we took our prototype to digital inclusion groups — local drop in sessions where people over 50 can build confidence using computers and digital services.
-          p At these sessions, we came across a different barrier altogether.
-          .case-study(href="https://medium.com/p/3b25a4e17fb0/") Read full blog →
-    .col-md-3
-      .card.thoughts
-        .card-body
-          img(src="images/thoughts/face-to-face-thumbnail.jpeg" style="max-width: 100%; padding-bottom: 15px")
-          a.blog-title(href="https://medium.com/p/5756637255b/") Designing digital content to support an offline journey
-        // .card-brief
-            p Last year Citizens Advice helped 2.7 million people with their problems  -  face-to-face, online or over the phone.
-            p Digital advice plays an ever-increasing role in solving these problems, but how do you design content that supports people across these various channels?
-            .case-study(href="https://medium.com/p/5756637255b/") Read full blog →
-    .col-md-3
-      .card.thoughts
-        .card-body
-          img(src="images/thoughts/zen-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
-          a.blog-title(href="https://medium.com/@owen.priestley/zen-and-the-art-of-documentation-maintenance-2d9c575f2f0e") Zen and the Art of Documentation Maintenance
-        // .card-brief
-            p This year's European branch of Write The Docs was kicked off in Prague by Riona MacNamara, a technical writer at Google. 
-            p In her talk, Imposter no more, Riona suggested that many technical writers suffer from ‘imposter syndrome’ - the feeling that we’re somehow fraudulent, and that it's only a matter of time until we're ‘found out’.
-            .case-study(href="https://owenpriestley.co.uk/thoughts-1/2015/11/11/zen-and-the-art-of-documentation-maintenance") Read full blog →
-    .col-md-3
-      .card.thoughts
-        .card-body
-          img(src="images/thoughts/apple-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
-          a.blog-title(href="https://medium.com/@owen.priestley/3-things-working-in-an-apple-store-taught-me-about-ux-ac6122a1307f") 3 things working in an Apple store taught me about UX
-        //  .card-brief
-            p Like so many people, my first job was in retail. I worked in a discount clothes shop, putting clothes back onto hangers and watching them fall off again. I did it for 4 hours a week and I hated it so much.
-            p But I ended up spending 3 years working in an Apple store, and looking back, many of the skills I use today as a UX writer come from my time at Apple.
-            .case-study(href="https://medium.com/@owen.priestley/3-things-working-in-an-apple-store-taught-me-about-ux-ac6122a1307f") Read full blog →
+  .row(style="width: 100%")
+  .col-md-12
+    #projects-carousel.carousel.slide(data-ride='carousel' data-interval="false")
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          h1(style="text-align: right") Some things I wrote
+          p.img-sub(style="text-align: right") I sometimes blog about UX, content design and life in London
+          div(style="margin: auto; padding-bottom: 5%")
+            a.right.projects-control(href='#projects-carousel', role='button', data-slide='next', style="float: right; text-align: right;") see things I like &#8594;
+            br
+          .col-md-3
+            .card.thoughts
+              .card-body
+                img(src="images/thoughts/prototype-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                a.blog-title(href="https://medium.com/p/3b25a4e17fb0/") Thinking differently about prototypes
+              //  .card-brief
+                p As part of testing, we took our prototype to digital inclusion groups — local drop in sessions where people over 50 can build confidence using computers and digital services.
+                p At these sessions, we came across a different barrier altogether.
+                .case-study(href="https://medium.com/p/3b25a4e17fb0/") Read full blog →
+          .col-md-3
+            .card.thoughts
+              .card-body
+                img(src="images/thoughts/face-to-face-thumbnail.jpeg" style="max-width: 100%; padding-bottom: 15px")
+                a.blog-title(href="https://medium.com/p/5756637255b/") Designing digital content to support an offline journey
+              // .card-brief
+                  p Last year Citizens Advice helped 2.7 million people with their problems  -  face-to-face, online or over the phone.
+                  p Digital advice plays an ever-increasing role in solving these problems, but how do you design content that supports people across these various channels?
+                  .case-study(href="https://medium.com/p/5756637255b/") Read full blog →
+          .col-md-3
+            .card.thoughts
+              .card-body
+                img(src="images/thoughts/zen-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                a.blog-title(href="https://medium.com/@owen.priestley/zen-and-the-art-of-documentation-maintenance-2d9c575f2f0e") Zen and the Art of Documentation Maintenance
+              // .card-brief
+                  p This year's European branch of Write The Docs was kicked off in Prague by Riona MacNamara, a technical writer at Google. 
+                  p In her talk, Imposter no more, Riona suggested that many technical writers suffer from ‘imposter syndrome’ - the feeling that we’re somehow fraudulent, and that it's only a matter of time until we're ‘found out’.
+                  .case-study(href="https://owenpriestley.co.uk/thoughts-1/2015/11/11/zen-and-the-art-of-documentation-maintenance") Read full blog →
+          .col-md-3
+            .card.thoughts
+              .card-body
+                img(src="images/thoughts/apple-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                a.blog-title(href="https://medium.com/@owen.priestley/3-things-working-in-an-apple-store-taught-me-about-ux-ac6122a1307f") 3 things working in an Apple store taught me about UX
+              //  .card-brief
+                  p Like so many people, my first job was in retail. I worked in a discount clothes shop, putting clothes back onto hangers and watching them fall off again. I did it for 4 hours a week and I hated it so much.
+                  p But I ended up spending 3 years working in an Apple store, and looking back, many of the skills I use today as a UX writer come from my time at Apple.
+                  .case-study(href="https://medium.com/@owen.priestley/3-things-working-in-an-apple-store-taught-me-about-ux-ac6122a1307f") Read full blog →
+        
+        
+        // Things I like
+        .item
+            h1(style="text-align: left") Some things I like
+            p.img-sub(style="text-align: left") Interesting trinkets I've recently uncovered on the World Wide Web
+            div(style="margin: auto; padding-bottom: 5%")
+              a.left.projects-control(href='#projects-carousel', role='button', data-slide='prev', style="float: left") &#8592; things I wrote 
+              br
+            .col-md-3
+              .card.thoughts
+                .card-body
+                  img(src="images/thoughts/little-big-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                  a.blog-title(href="http://littlebigdetails.com/") Little Big Details
+                  .card-brief
+                  p.img-sub A little bit old, but more than a little bit interesting, Little Big Details celebrates the small UX triumphs in everyday products and services.
+            .col-md-3
+              .card.thoughts
+                .card-body
+                  img(src="images/thoughts/type-hunters-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                  a.blog-title(href="https://www.kanopy.com/product/type-hunters") Type Hunters
+                  .card-brief
+                  p.img-sub Type Hunters follows typographers from across the world as they explore the everyday typography around the cities they live in.
+            .col-md-3
+              .card.thoughts
+                .card-body
+                  img(src="images/thoughts/casa-bonay-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                  a.blog-title(href="https://casabonay.com/hotel/story") Casa Bonay
+                  .card-brief
+                  p.img-sub A beautiful hotel in Barcelona, with an equally beautiful website designed by LLOS.
+            .col-md-3
+              .card.thoughts
+                .card-body
+                  img(src="images/thoughts/tarot-thumbnail.jpg" style="max-width: 100%; padding-bottom: 15px")
+                  a.blog-title(href="https://www.leguesswho.nl/news/king-khan-michael-eaton-present-the-black-power-tarot-at-le-guess-who-2017") Black Power Tarot Cards
+                  .card-brief
+                  p.img-sub Artists King Khan and Michael Eaton collaborated to celebrate 26 powerful African American figures from history, using the somewhat unusual medium of Tarot cards.
